@@ -55,5 +55,7 @@ $route['api/contact/(:num)']['get'] = 'home/index/$1';
 $route['api/contact']['post'] = 'home/tambah';
 $route['api/contact/(:num)']['put'] = 'home/ubah/$1';
 $route['api/contact/(:num)']['delete'] = 'home/hapus/$1';
+$route['api/auth']['post'] = 'login/index';
+// $route['api/auth/(:any)']['post'] = 'login/test/$1';
 $route['404_override'] = 'home/error';
 $route['translate_uri_dashes'] = FALSE;
